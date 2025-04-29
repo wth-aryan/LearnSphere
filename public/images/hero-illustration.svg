@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Person -->
+    <path d="M200 150 C 180 150, 165 165, 165 185 C 165 205, 180 220, 200 220 C 220 220, 235 205, 235 185 C 235 165, 220 150, 200 150" fill="#F3E8FF"/>
+    <path d="M165 230 L 165 280 L 235 280 L 235 230" fill="#F3E8FF"/>
+    
+    <!-- Arm pointing -->
+    <path d="M235 240 L 285 220" stroke="#F3E8FF" stroke-width="20" stroke-linecap="round"/>
+    
+    <!-- Play button -->
+    <circle cx="320" cy="200" r="40" fill="#A78BFA"/>
+    <path d="M310 180 L 340 200 L 310 220 Z" fill="white"/>
+    
+    <!-- Decorative elements -->
+    <circle cx="100" cy="150" r="20" fill="#A78BFA" opacity="0.3"/>
+    <circle cx="320" cy="300" r="15" fill="#A78BFA" opacity="0.3"/>
+    <circle cx="150" cy="350" r="25" fill="#A78BFA" opacity="0.3"/>
+</svg> 
