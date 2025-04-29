@@ -17,6 +17,7 @@
         }
     ],
     "env": {
+        "APP_NAME": "LearnSphere",
         "APP_ENV": "production",
         "APP_DEBUG": "false",
         "APP_URL": "https://learnsphere.vercel.app",
@@ -28,11 +29,13 @@
         "VIEW_COMPILED_PATH": "/tmp",
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
-        "SESSION_DRIVER": "cookie",
-        "SSR_TEMP_PATH": "/tmp/ssr",
-        "NODE_PATH": "node"
+        "SESSION_DRIVER": "cookie"
     },
-    "buildCommand": "npm ci && npm run build && composer install --no-dev",
-    "outputDirectory": "public",
-    "devCommand": "php artisan serve"
+    "build": {
+        "env": {
+            "PHP_VERSION": "8.1"
+        }
+    },
+    "buildCommand": "php -r \"copy('.env.example', '.env');\" && composer install --no-dev && php artisan key:generate --force && npm install && npm run build",
+    "outputDirectory": "public"
 } 
