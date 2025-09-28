@@ -1,0 +1,134 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.upload-area {
+  border: 2px dashed #1976d2;
+  border-radius: 8px;
+  padding: 40px;
+  margin: 20px 0;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+  border-color: #1565c0;
+  background-color: #e3f2fd;
+}
+
+.upload-area.dragover {
+  border-color: #1565c0;
+  background-color: #e3f2fd;
+  transform: scale(1.02);
+}
+
+.file-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin: 8px 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.file-item:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+.file-icon {
+  margin-right: 12px;
+  color: #1976d2;
+}
+
+.file-info {
+  flex: 1;
+  text-align: left;
+}
+
+.file-name {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.file-meta {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.file-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.storage-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 8px 0;
+}
+
+.storage-fill {
+  height: 100%;
+  background-color: #1976d2;
+  transition: width 0.3s ease;
+}
+
+.share-link {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-family: monospace;
+  font-size: 0.875rem;
+  word-break: break-all;
+}
+
+.password-dialog {
+  padding: 20px;
+}
+
+.error-message {
+  color: #d32f2f;
+  margin: 8px 0;
+  font-size: 0.875rem;
+}
+
+.success-message {
+  color: #2e7d32;
+  margin: 8px 0;
+  font-size: 0.875rem;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+@media (max-width: 768px) {
+  .file-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .file-actions {
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 8px;
+  }
+}
